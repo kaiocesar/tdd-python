@@ -3,9 +3,10 @@
 
 # docs https://docs.python.org/2/library/unittest.html#assert-methods
 
-
+from __future__ import absolute_import
 import unittest
-from Bank import *
+import os
+import src.bank
 
 """
 	Unittest class Bank
@@ -26,6 +27,5 @@ class Bank_testcase(unittest.TestCase, Bank):
 	def test_queryaccount(self):
 		self.assertNotEqual(self.QueryValueAccount('321123'), False)
 		self.assertEqual(self.QueryValueAccount(), False)
-
 
 unittest.main()

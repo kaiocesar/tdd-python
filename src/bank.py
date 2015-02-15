@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- encoding: utf-8 -*-
 
+from __future__ import absolute_import
+
 class Bank:
 	costumer_name = ''
 	costumer_cpf = ''
