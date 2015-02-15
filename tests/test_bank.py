@@ -2,18 +2,16 @@
 # -*- encoding: utf-8 -*-
 
 # docs https://docs.python.org/2/library/unittest.html#assert-methods
-
-from __future__ import absolute_import
 import unittest
-import os
-import src.bank
+from src.bank import Bank
+
 
 """
 	Unittest class Bank
 """
 
 
-class Bank_testcase(unittest.TestCase, Bank):
+class Test_bank(unittest.TestCase, Bank):
 
 	def test_function_initial(self):
 		self.assertIsNotNone(self.__init__)
