@@ -10,7 +10,7 @@ class Bank:
 	BaseCostumers = ([('kaio','123123','0004','100000.00'),('bruna','321123','0005','9000.00')])
 
 	def __init__(self, name=None, cpf=None, account_number=None):
-		if (name <> None and cpf <> None and account_number <> None):
+		if (name != None and cpf != None and account_number != None):
 			self.costumer_cpf = cpf
 			self.costumer_name = name
 			self.costumer_number_account = account_number
@@ -24,7 +24,7 @@ class Bank:
 		elif Validate == False:
 			datas = (self.costumer_name, self.costumer_cpf, self.costumer_number_account)
 			self.BaseCostumers.append(datas)
-			print self.BaseCostumers
+			print(self.BaseCostumers)
 		else:
 			#"Set the values of the properties in the costructor"
 			return None
